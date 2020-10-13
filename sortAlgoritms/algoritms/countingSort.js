@@ -22,7 +22,7 @@ function countingSort (arr) {
       countingArray[i]--
     }
   } // O(N log N)
-  console.log(resultArray)
+  return resultArray;
 }
 
 function countingSort2 (arr) {
@@ -38,10 +38,16 @@ function countingSort2 (arr) {
        resultArray.push(index)
      }
    }) // O(N log N)
-   console.log(resultArray)
+   return resultArray;
+}
+
+const counting = {
+  sortName: 'Countig sort algoritm',
+  sortFunction: countingSort,
 }
 
 module.exports = {
   countingSort,
   countingSort2,
+  counting,
 }

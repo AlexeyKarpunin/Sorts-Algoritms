@@ -14,6 +14,12 @@ function selectionSort(arr) {
   return arr;
 }
 
+const selection = {
+  sortName: 'Selection sort algoritm',
+  sortFunction: selectionSort,
+}
+
 module.exports = {
+  selection,
   selectionSort,
 }

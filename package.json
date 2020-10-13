@@ -1,0 +1,11 @@
+{
+  "name": "AlgoritnsJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alexey Karpunin",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node ./sortAlgoritms/testAllAlgoritms.js"
+  }
+}

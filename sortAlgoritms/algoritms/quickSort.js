@@ -14,6 +14,12 @@ function quickSort (arr) {
 }
 
 
+const quick = {
+  sortName: 'Quick sort algoritm',
+  sortFunction: quickSort,
+}
+
 module.exports = {
+  quick,
   quickSort,
 }

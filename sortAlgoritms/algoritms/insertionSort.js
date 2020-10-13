@@ -1,8 +1,6 @@
 function insertionSort (arr) {
-  let last;
   let previous = 0;
   for (let index = 1; index < arr.length; index++) {
-    last = index;
     previous = index - 1;
     while (index > 0) {
       if(arr[index] < arr[previous]) {
@@ -10,7 +8,6 @@ function insertionSort (arr) {
         index--;
         previous--;
       } else {
-        previous++;
         break;
       }
     }
@@ -18,6 +15,12 @@ function insertionSort (arr) {
   return arr;
 }
 
+const insertion = {
+  sortName: 'Insertion sort algoritm',
+  sortFunction: insertionSort,
+}
+
 module.exports = {
+  insertion,
   insertionSort,
 }

@@ -5,10 +5,10 @@ function mergeSort (arr) {
   const left = arr.slice(0, middle);
   const right = arr.slice(middle);
 
-  return merge(mergeSort(left), mergeSort(right));
+  return mergeHelper(mergeSort(left), mergeSort(right));
 }
 
-function merge (left, right) {
+function mergeHelper (left, right) {
   const arraySort = [];
   let i = 0;
   let j = 0;
@@ -26,6 +26,12 @@ function merge (left, right) {
     return [...arraySort, ...left.slice(i), ...right.slice(j)]
 }
 
+const merge = {
+  sortName: 'Merge sort algoritm',
+  sortFunction: mergeSort,
+}
+
 module.exports = {
   mergeSort,
+  merge,
 }
